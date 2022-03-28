@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class ExamplesTest {
 
-    @Test
+    //@Test
     void testParallel() {
         Results results = Runner.path("classpath:examples")
                 //.outputCucumberJson(true)
