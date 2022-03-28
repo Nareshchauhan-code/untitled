@@ -23,6 +23,15 @@ Feature: To test the end pont of the Application
     And match response.[0].experience[*] == ["Google","Apple","Mobile Iron"]
     And match response.[0].project[0].technology[*] == ["Kotlin","SQL Lite","Gradle"]
 
+    # Validation with contains keyword
+
+    And match response.[0].experience[*] contains ["Google","Apple"]
+    And match response.[0].project[0].technology[*] contains ["Gradle"]
+    And match response.[*].jobId contains 1
+
+
+
+
 
 
 
